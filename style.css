@@ -1,0 +1,18 @@
+.form-inline {
+    float: right
+
+}
+body{
+    background-color: navy;
+}
+
+.jumbo {
+    text-align: left;
+    background-color: navy;
+}
+
+
+.jumbotron{
+    
+    height: 75%;
+}
