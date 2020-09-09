@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" src="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+
+<body>
+
+ <div class="row" style="background-color: #136373; color: white;">
+     <h1 style="margin:0%">WeatherLook</h1>
+      <input class="form-control col-3" style="background-color: white; margin-left: 35%; margin-top: 2%" id="query" type="search" placeholder="Search" aria-label="Search"></input>
+      <button class="search-btn btn-outline-info" style="margin-top: 2.25%; margin-bottom: 1%;" type="submit">Search</button>
+</div>
+<br>
+
+<div class="forcastBlock" style="display: flex; flex-direction: row;">
+  <div class="jumbo col-3">
+  <div style="background-color: lightblue" class="jumbotron">
+    <h1 class="wdisplay-4" style="margin: 0%">Current Weather</h1>
+    <p class="currentIcon"><img id="wicon" src="" alt=""></p>
+    <p class="currentCity"> City: </p>
+    <p class="currentTime">Day and Time: </p>
+    <p class="currentTemp">Tempature: </p>
+    <p class="currentSky">Sky: </p>
+    <p class="windSpeed">WindSpeed: </p>
+    <p class="humidity">Humidity: </p>
+    <p class="uvIndex">UV index: </p>
+    <hr class="my-4">
+    <p class="searchHistory" id="searchHistory">Search History: </p>
+  </div>
+  </div>
+  <!-- This is for the 5 Day Weather Blocks -->
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title Date1">Date: </span>
+          <p class="icon1"><img id="wicon1" src="" alt=""></p>
+          <p class="temp1">Temp:</p>
+          <p class="Skycond1">Sky Conditions:</p>
+          <p class="Humidity1">Humidity:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m6">
+       <div class="card blue-grey darken-1">
+         <div class="card-content white-text">
+           <span class="card-title Date2">Date:</span>
+           <p class="icon2"><img id="wicon2" src="" alt=""></p>
+           <p class="temp2">Temp:</p>
+           <p class="Skycond2">Sky Conditions:</p>
+           <p class="Humidity2">Humidity:</p>
+         </div>   
+        </div>
+      </div>
+    </div>   
+    <div class="row">
+      <div class="col s12 m6">
+         <div class="card blue-grey darken-1">
+           <div class="card-content white-text">
+             <span class="card-title Date3">Date</span>
+             <p class="icon3"><img id="wicon3" src="" alt=""></p>
+             <p class="temp3">Temp:</p>
+             <p class="Skycond3">Sky Conditions:</p>
+             <p class="Humidity3">Humidity:</p>
+           </div>   
+          </div>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col s12 m6">
+           <div class="card blue-grey darken-1">
+             <div class="card-content white-text">
+               <span class="card-title Date4">Date:</span>
+               <p class="icon4"><img id="wicon4" src="" alt=""></p>
+               <p class="temp4">Temp:</p>
+               <p class="Skycond4">Sky Conditions:</p>
+               <p class="Humidity4">Humidity:</p>
+             </div>   
+            </div>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="col s12 m6">
+             <div class="card blue-grey darken-1">
+               <div class="card-content white-text">
+                 <span class="card-title Date5">Date:</span>
+                 <p class="icon5"><img id="wicon5" src="" alt=""></p>
+                 <p class="temp5">Temp:</p>
+                 <p class="Skycond5">Sky Conditions:</p>
+                 <p class="Humidity5">Humidity:</p>
+               </div>   
+              </div>
+            </div>
+          </div>  
+
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
